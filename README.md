@@ -1,4 +1,5 @@
-# Kaywon University of Art &amp; Design
+# Dokdo 1025
 
-## Interaction programming
-## Dokdo 1025
+Kaywon University of Art &amp; Design.
+Interaction programming
+
