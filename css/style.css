@@ -1,0 +1,71 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap&subset=korean');
+/* font-family: 'Nanum Brush Script', cursive; */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap');
+/* font-family:'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
+/* font-family: 'Noto Sans KR', sans-serif; */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;user-select: none;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+/* layout */
+#wrap{overflow-x:hidden;position: relative;width: 100%;}
+@font-face{src: url('../font/KoPubWorld\ Batang\ Medium.ttf');font-family: 'batangMedium'};
+body{color: #2d2d2d;font-family: 'Noto Sans KR', sans-serif; }
+#header{position: fixed;top: 0;right: 0;left: 0;background-color: rgba(255, 255,255,0.7);z-index: 2000 !important;border-bottom: solid 1px #bebebe7a;}
+#main {font-family: 'Noto Sans KR', sans-serif; }
+#footer{border-top: solid 1px #bebebe7a;font-size: 12px;padding-top: 30px; padding-bottom: 50px;line-height: 2; color: #9e9e9e}
+.container{position: relative;width: 100%; /*background-color: slategrey*/}
+.component{position: relative;width: 1200px;margin-right: auto;margin-left: auto; /*background-color: teal*/}
+
+article{position: relative;}
+#logo{position: absolute;top:19.5px;right:20px;line-height: 1;}
+#logo p {text-align: center;font-family: 'batangMedium'}
+#logo p:first-child{font-size: 25px;}
+#nav{padding-top: 30px;padding-bottom: 30px;}
+#nav ul { display: inline-block; padding-left: 30px;}
+#nav li {display: inline-block;text-transform: uppercase;}
+#nav li a,a:link,a:visited{color: #000;text-decoration: none;font:15px 'Roboto', sans-serif;}
+#nav li + li{margin-left: 35px;}
+
+#main-view{overflow: hidden;height: 100vh;}
+#main-img img{width: 100%;/*filter: blur(1px)*/}
+#main-title{position: absolute;top: 40%;width: 100%;transform: translateY(50%);color: #2d2d2d; text-align: center; font-family: 'Roboto', sans-serif;}
+#main-title p:first-child{font-size: 54px;font-weight: 700;text-transform: uppercase;}
+#main-title p:last-child{margin-top: 10px; font-size: 16px;line-height: 1.5;font-family: 'Noto Sans KR', sans-serif;}
+
+.fadein{animation: fadeIn ease-in-out 2s;}
+@keyframes fadeIn{
+    0%{opacity: 0;}100%{opacity: 1;}
+}
+#rotation{position: absolute;top: -40px;left: -30px; width: 2000px;height: 70px;transform: rotateZ(-1.7deg);background-color: #fff;}
+#product{padding-top: 100px}
+#product-tilte{font: 30px 'Roboto', sans-serif;font-weight: 500; padding-left:50px;color: #d1eaff}
+.product-list{margin: 40px 0 40px 0;}
+#product .product-list .container{position: static; display: inline-block; width: 50%; box-sizing: border-box;vertical-align: middle;}
+.product-list a:link,a:visited{color: #2d2d2d;}
+.product-textbox{text-align: center;}
+.product-textbox p:first-child{ font-size: 14px;margin-bottom: 10px;font-family: 'Roboto', sans-serif !important;letter-spacing:5px;}
+.product-textbox p:nth-child(2){ font-size: 40px;margin-bottom: 40px;}
+.product-textbox p:nth-child(3){ font-size: 35px;margin-bottom: 20px; color: #32a9e0;font-family: 'Nanum Brush Script', cursive !important;}
+a .product-btn {display: inline-block;text-align: center;width: 32%; height: 50px;border: solid 2px #2d2d2d;border-radius: 3px; box-sizing: border-box;font:18px 'Roboto', sans-serif;font-weight: 700; margin-top: 50px;text-decoration: none;line-height: 2.6;}
+.product-img img{width: 100%;}
+
+/* footer */
+#footer span{font-size: 10px;}
+#footer a:link,a:visited{font-size: 11px; color: #2d2d2d;text-decoration: none }
+#footer-sns{text-align: right}
+#footer-copyright{text-align: center;}
+#footer-copyright ul li:last-child{font-size: 13px;color: #2d2d2d;}
+#footer-sns img{width: 30px; display: inline-block;}
+#footer-sns img+img{margin-left: 10px;}

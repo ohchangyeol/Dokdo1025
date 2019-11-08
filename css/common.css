@@ -1,0 +1,54 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap&subset=korean');
+/* font-family: 'Nanum Brush Script', cursive; */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap');
+/* font-family:'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
+/* font-family: 'Noto Sans KR', sans-serif; */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;user-select: none;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+/* layout */
+#wrap{overflow-x:hidden;position: relative;width: 100%;text-align: center;}
+@font-face{src: url('../font/KoPubWorld\ Batang\ Medium.ttf');font-family: 'batangMedium'};
+body{color: #2d2d2d;font-family: 'Noto Sans KR', sans-serif; }
+#header{position: fixed;top: 0;right: 0;left: 0;background-color: rgba(255, 255, 255, 0.671);z-index: 2000 !important;border-bottom: solid 1px #bebebe7a; transition: all 0.5s ease-in-out}
+.nav-up { transform:translateY(0) }
+.nav-down { transform:translateY(-100%); pointer-events:none }
+#main {font-family: 'Noto Sans KR', sans-serif; }
+#footer{border-top: solid 1px #bebebe7a;font-size: 12px;padding-top: 30px; padding-bottom: 50px;line-height: 2; color: #9e9e9e}
+.container{position: relative;width: 100%; /*background-color: slategrey*/}
+.component{position: relative;width: 1200px;margin-right: auto;margin-left: auto; /*background-color: teal*/}
+
+article{position: relative;}
+#logo{position: absolute;z-index: 1000; top:19.5px;right:20px;line-height: 1;}
+#logo p {text-align: center;font-family: 'batangMedium'}
+#logo p:first-child{font-size: 25px;}
+#nav{position: relative; padding-top: 30px;padding-bottom: 30px; text-align: left}
+#nav ul { display: inline-block; padding-left: 30px;}
+#nav li {display: inline-block;text-transform: uppercase;}
+#nav li a{transition:all 200ms ease-in-out; box-sizing: border-box}
+#nav li a,a:link,a:visited{color: #000;text-decoration: none;font:15px 'Roboto', sans-serif;}
+#nav li + li{margin-left: 35px;}
+#nav li.selected a,#nav li a:hover{color: #4db856;font-weight: 500 }
+#nav .dot{display:block;position: absolute;top:20px;left:30px;width:6px;height:6px; border-radius:50%;background-color:#4db856;}
+#nav.active .dot{transition:all 250ms ease-in-out}
+
+/* footer */
+#footer span{font-size: 10px;}
+#footer a:link,a:visited{font-size: 11px; color: #2d2d2d;text-decoration: none }
+#footer-sns{text-align: right}
+#footer-copyright{text-align: center;}
+#footer-copyright ul li:last-child{font-size: 13px;color: #2d2d2d;}
+#footer-sns img{width: 30px; display: inline-block;}
+#footer-sns img+img{margin-left: 10px;}

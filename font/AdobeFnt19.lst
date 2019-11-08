@@ -1,0 +1,93 @@
+%!Adobe-FontList 1.19
+%Locale:0x412
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:KoPubWorldBatangBold
+FamilyName:KoPubWorldBatang
+StyleName:Bold
+FullName:KoPubWorldBatang Bold
+MenuName:KoPubWorld바탕체 Bold
+StyleBits:2
+FamilyNameNative:KoPubWorld바탕체
+StyleNameNative:Bold
+FullNameNative:KoPubWorld바탕체 Bold
+WritingScript:Korean
+OutlineFileName:E:\Kaywon_University\2학년\1학기\인터프로그래밍\13wn\동고비\Font\KoPubWorld Batang Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:12194244
+FileModTime:1545269316
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,KoPubWorldBatang Bold
+NameArray:3,Mac,4,KoPubWorld바탕체 Bold
+NameArray:0,Win,1,KoPubWorldBatang Bold
+NameArray:0,Win,16,KoPubWorldBatang
+NameArray:3,Win,1,KoPubWorld바탕체 Bold
+NameArray:3,Win,16,KoPubWorld바탕체
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:KoPubWorldBatangLight
+FamilyName:KoPubWorldBatang
+StyleName:Light
+FullName:KoPubWorldBatang Light
+MenuName:KoPubWorld바탕체 Light
+StyleBits:0
+FamilyNameNative:KoPubWorld바탕체
+StyleNameNative:Light
+FullNameNative:KoPubWorld바탕체 Light
+WritingScript:Korean
+OutlineFileName:E:\Kaywon_University\2학년\1학기\인터프로그래밍\13wn\동고비\Font\KoPubWorld Batang Light.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:12295096
+FileModTime:1545269314
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,KoPubWorldBatang Light
+NameArray:3,Mac,4,KoPubWorld바탕체 Light
+NameArray:0,Win,1,KoPubWorldBatang Light
+NameArray:0,Win,16,KoPubWorldBatang
+NameArray:3,Win,1,KoPubWorld바탕체 Light
+NameArray:3,Win,16,KoPubWorld바탕체
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:KoPubWorldBatangMedium
+FamilyName:KoPubWorldBatang
+StyleName:Medium
+FullName:KoPubWorldBatang Medium
+MenuName:KoPubWorld바탕체 Medium
+StyleBits:0
+FamilyNameNative:KoPubWorld바탕체
+StyleNameNative:Medium
+FullNameNative:KoPubWorld바탕체 Medium
+WritingScript:Korean
+OutlineFileName:E:\Kaywon_University\2학년\1학기\인터프로그래밍\13wn\동고비\Font\KoPubWorld Batang Medium.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:12142644
+FileModTime:1545269316
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,KoPubWorldBatang Medium
+NameArray:3,Mac,4,KoPubWorld바탕체 Medium
+NameArray:0,Win,1,KoPubWorldBatang Medium
+NameArray:0,Win,16,KoPubWorldBatang
+NameArray:3,Win,1,KoPubWorld바탕체 Medium
+NameArray:3,Win,16,KoPubWorld바탕체
+%EndFont
+
