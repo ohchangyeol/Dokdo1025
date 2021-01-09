@@ -2,37 +2,72 @@
 
 var _hearder = document.querySelector("#header");
 var exScroll;
-
-
 var _nav = document.querySelector("#nav");
 var _navDot = _nav.querySelector('.dot');
 var _navUl = _nav.querySelector('ul');
 var _navList = _nav.querySelectorAll('li');
 var _navEl = _nav.querySelectorAll('a');
+const _teb = document.querySelector(".teb"); 
 var _navId = -1;
 var i;
-for(i = 0; i <_navList.length; i ++){
-    if(_navList[i].classList.contains('selected')){
-        _navId = i;
-    }
-    _navEl[i].addEventListener('mouseenter', onEnterNavEl);
+var media = window.matchMedia("screen and (max-width: 1200px)");
+
+
+if (media.matches) {
+    mobileInit()
+} else {
+    deskTopInit();
 }
-_navUl.addEventListener('mouseenter', onEnterNav);
-_navUl.addEventListener('mouseleave', onLeaveNav);
+media.addListener(function(e) {
+    if(e.matches) {
+        mobileInit()
+    } else {
+        console.log('데스크탑 화면 입니다.');
+        deskTopInit();
+    }
+});
+
+function deskTopInit() {
+    for(i = 0; i <_navList.length; i ++){
+        if(_navList[i].classList.contains('selected')) _navId = i;
+        _navEl[i].addEventListener('mouseenter', onEnterNavEl);
+    }
+    _navUl.addEventListener('mouseenter', onEnterNav);
+    _navUl.addEventListener('mouseleave', onLeaveNav);
+    setNavDot();
+
+}
+function mobileInit() {
+    for(i = 0; i <_navList.length; i ++){
+        if(_navList[i].classList.contains('selected')) _navId = i;
+        _navEl[i].addEventListener('mouseenter', onEnterNavEl);
+    }
+    _teb.addEventListener('click',tebOnClick)
+}
+
+
+function tebOnClick () {
+    if(_teb !== undefined){
+        if(_nav.classList.contains("view")) _nav.classList.remove("view");
+        else _nav.classList.add("view")
+    }
+}
+
 function setNavDot() {
     if(_navId !== -1){
-        var $el = _navList[_navId], posX = $el.offsetLeft, width = $el.offsetWidth, dotPosX = posX - 30 + width / 2 - 3;
+        var $el = _navList[_navId], 
+            posX = $el.offsetLeft, 
+            width = $el.offsetWidth, 
+            dotPosX = posX - 30 + width / 2 - 3;
         _navDot.style.transform = "translateX("+ dotPosX + "px)";
         setTimeout(function(){
             _nav.classList.add('active');
         }, 10)
-        console.log(posX, width);
     }else{
         _nav.classList.add('active');
         _navDot.style.opacity = 0;
     }
 }
-setNavDot();
 
 function onEnterNavEl(e){
     var $el = e.currentTarget, posX = $el.offsetLeft, width = $el.offsetWidth, dotPosX = posX - 30 + width / 2 - 3;
@@ -56,29 +91,8 @@ function onLeaveNav(e){
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 window.addEventListener("scroll",function(e){
     var posscroll = window.scrollY;
-    // var posscroll = window.pageYOffset;
-    // 현재 위치보다 스크롤이 커질 때 마다 화면에 헤더가 없어지고, 현재 위치보다 스크롤이 작아질때 마다 화면에 해더가 생긴다. 
-    // if(posscroll < posscroll+100){
-    //     console.log("추가");
-    // }else{
-    //     console.log("빼기")
-    // }
-
-    // console.log(exScroll);
     if(exScroll !== undefined){
         if(exScroll < posscroll){
             _hearder.classList.remove("nav-up");

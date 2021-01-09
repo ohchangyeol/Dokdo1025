@@ -22,9 +22,6 @@ function onresize(){
 onresize();
 setInterval(function(){
     _cuId ++;
-    if(_cuId === 3){
-        _cuId = 0;
-    }
-    // console.log(_cuId);
+    if(_cuId === 3) _cuId = 0;
     onresize();
 },4000);
