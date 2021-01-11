@@ -78,6 +78,10 @@ section table tr+tr {border-top: solid 1px #c4c4c4}
 .blue{background-color: #c9ddfc;border-radius: 6px}
 .green{background-color: #b7dabe;border-radius: 6px}
 .red{background-color: #ffd7d7;border-radius: 6px}
+.media-text{display: inline;}
+.media-br {display: none}
+.full-br {display: block}
+
 
 @media screen and (max-width: 1200px) {
     #sub-title-top{font-size: 3rem;}
@@ -111,4 +115,11 @@ section table tr+tr {border-top: solid 1px #c4c4c4}
     section table .col1{padding-right: 10px;line-height: 1.5;}
     .table-box{padding: 1rem;}
     #main-tltle{padding: 100px 0.8rem 0 0.8rem;}
+    #sub1-title-top {font-size: 43px;}
+
+    .media-text{display: block;}
+
+    .full-br {display: none}
+    .media-br {display: block}
+
 }
